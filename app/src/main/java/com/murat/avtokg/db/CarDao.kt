@@ -10,7 +10,7 @@ interface CarDao {
     fun getAllCar() : List<CarEntity>
 
     @Query("SELECT * FROM $CAR_TABLE WHERE brand == :br")
-    fun filterTask(br: String):List<CarEntity>
+    fun filterBrand(br: String):List<CarEntity>
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertCar(entity: CarEntity)
 
