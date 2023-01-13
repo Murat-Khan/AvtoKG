@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AvtoKG</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="model">Model</string>
+    <string name="price">Price</string>
+    <string name="series_year">Year</string>
+    <string name="brand">Brand</string>
+    <string name="body">Body</string>
+    <string name="price_">Price</string>
+    <string name="seriesyear">SeriesYear</string>
+    <string name="save">Save</string>
+    <string name="select_brand">Select Brand</string>
+    <string name="select_model">Select Model</string>
+    <string name="add_a_photo">Add a photo</string>
+    <string name="edit">Edit</string>
+    <string name="brand_empty_message">Сначала укажите марку машины</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.murat.avtokg.ui.homefragment.HomeFragment"
+        android:label="Avto"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/addCarFragment"
+        android:name="com.murat.avtokg.ui.add.AddCarFragment"
+
+        tools:layout="@layout/fragment_add_car" />
+
+    <fragment
+        android:id="@+id/modelFragment"
+        android:name="com.murat.avtokg.ui.modelfragment.ModelFragment"
+        android:label="Model"
+        tools:layout="@layout/fragment_model"/>
+    <fragment
+        android:id="@+id/brandFragment"
+        android:name="com.murat.avtokg.ui.brandfragment.BrandFragment"
+        android:label="Brand"
+        tools:layout="@layout/fragment_brand" />
+</navigation>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="5dp"
+    android:foreground="?selectableItemBackground"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_margin="8dp"
+        >
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imgCar"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            app:riv_corner_radius="12dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvModel"
+            app:layout_constraintStart_toStartOf="parent"
+
+             />
+
+        <TextView
+            android:id="@+id/tvBrand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_max="wrap"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Brand"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/imgCar"
+            android:layout_marginVertical="4dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/purple_500"/>
+
+        <TextView
+            android:id="@+id/tvModel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_max="wrap"
+            app:layout_constraintTop_toTopOf="@id/tvBrand"
+            app:layout_constraintStart_toEndOf="@id/tvBrand"
+            android:layout_marginStart="8dp"
+            android:text="@string/model"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/tvBrand"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/purple_500"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            app:layout_constraintWidth_percent="0.2"
+            android:layout_marginStart="8dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            app:layout_constraintTop_toTopOf="@id/imgCar"
+            app:layout_constraintStart_toEndOf="@id/imgCar"
+            />
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:minLines="1"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/price"
+            app:layout_constraintBottom_toBottomOf="@id/price"
+          />
+
+        <TextView
+            android:id="@+id/seriesYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/series_year"
+            app:layout_constraintWidth_percent="0.2"
+            android:layout_marginStart="8dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            app:layout_constraintStart_toEndOf="@id/imgCar"
+            app:layout_constraintTop_toBottomOf="@id/price"
+            app:layout_constraintBottom_toTopOf="@id/body"
+            />
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:minLines="1"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/seriesYear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/seriesYear"
+            app:layout_constraintBottom_toBottomOf="@id/seriesYear" />
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Body"
+            android:layout_marginStart="8dp"
+            app:layout_constraintWidth_percent="0.2"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            app:layout_constraintStart_toEndOf="@id/imgCar"
+            app:layout_constraintTop_toBottomOf="@id/seriesYear"
+            app:layout_constraintBottom_toBottomOf="@id/imgCar"
+
+            />
+
+        <TextView
+            android:id="@+id/tvBody"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:minLines="1"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/body"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/body"
+            app:layout_constraintBottom_toBottomOf="@id/body"
+            />
+
+
+        <ImageView
+            android:id="@+id/menuImg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_more"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
